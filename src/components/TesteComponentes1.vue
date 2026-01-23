@@ -46,6 +46,8 @@ a:hover {
   justify-content: space-between;
 }
 .logo {
+  width: 80px;
+  height: 100;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -54,7 +56,7 @@ a:hover {
   margin-right: 10px;
 }
 .logo-circle {
-  width: 34px;
+  width: 54px;
   height: 34px;
   background: #1fd18a;
   color: #0f2533;
@@ -69,7 +71,7 @@ a:hover {
 }
 .menu a {
   color: #cfd8dc;
-  font-size: 14px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -77,8 +79,9 @@ a:hover {
   background: #fff;
   color: #0f2533;
   border: none;
-  padding: 10px 16px;
+  padding: 20px 40px;
   border-radius: 8px;
   font-weight: 600;
+  font-size: 20px;
 }
 </style>

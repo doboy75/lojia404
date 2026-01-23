@@ -8,9 +8,9 @@
           pelo Whatsapp
         </h1>
 
-        <p>
-          Tenha um Catálogo Digital dos seus produtos para você vender pela
-          internet.
+        <p class="entrada">
+          Tenha um Catálogo Digital dos<br />
+          seus produtos para você vender pela internet.
         </p>
 
         <button class="btn-primary">Começar Agora</button>
@@ -32,37 +32,41 @@ export default {
 <style scoped>
 .hero {
   background: #0f2533;
-  padding: 80px 0;
+  padding: 8rem 0;
 }
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: auto;
-  padding: 0 24px;
+  padding: 0 2rem;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 6rem;
   align-items: center;
 }
 .text h1 {
   color: #fff;
-  font-size: 42px;
+  font-size: 4.1rem;
+}
+.entrada {
+  font-size: 24px;
+  line-height: 40px;
 }
 .text p {
   color: #cfd8dc;
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 .btn-primary {
   background: #1fd18a;
   border: none;
-  padding: 14px 28px;
-  border-radius: 10px;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
   font-weight: 600;
+  font-size: 1.7rem;
 }
 .imagem-video img {
   width: 100%;
   height: auto;
-  
 }
 </style>
