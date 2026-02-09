@@ -1,7 +1,29 @@
 <template>
   <section>
-    <div class="grid" style="margin-top: 90px">
-      <div class="container px-4 vh-75 mx-auto" style="max-width: 1200px">
+    <div class="row justify-content-center" style="margin-top: 90px">
+      <div
+        class="col-12 col-md-auto container px-4 vh-75 mx-auto"
+        style="max-width: 1200px"
+      >
+        <div
+          class="text-center px-4 py-3 rounded-4 shadow"
+          style="width: 260px; box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.1)"
+        >
+          <h1 class="fw-bold">Vocé cria seu catálogo digital</h1>
+          <div>
+            <img
+              class="py-4"
+              src="../assets/vetor passo 1.png"
+              :alt="descricao_1"
+            />
+            <p class="p">{{ textCard }}</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-12 col-md-auto container px-4 vh-75 mx-auto"
+        style="max-width: 1200px"
+      >
         <div
           class="text-center px-4 py-3 rounded-4 shadow"
           style="width: 260px; box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.1)"
@@ -17,23 +39,10 @@
           </div>
         </div>
       </div>
-      <div class="container px-4 vh-75 mx-auto" style="max-width: 1200px">
-        <div
-          class="text-center px-4 py-3 rounded-4 shadow"
-          style="width: 260px; box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.1)"
-        >
-          <h1 style="font-weight: 700">Vocé cria seu catálogo digital</h1>
-          <div>
-            <img
-              class="py-4"
-              src="../assets/vetor passo 1.png"
-              :alt="descricao_1"
-            />
-            <p class="p">{{ textCard }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="container px-4 vh-75 mx-auto" style="max-width: 1200px">
+      <div
+        class="col-12 col-md-auto container px-4 vh-75 mx-auto"
+        style="max-width: 1200px"
+      >
         <div
           class="text-center px-4 py-3 rounded-4 shadow"
           style="width: 260px; box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.1)"
@@ -71,14 +80,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.seccao {
-  padding: 90px 0;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 350px 350px 350px;
-  justify-content: center;
-}
-</style>
