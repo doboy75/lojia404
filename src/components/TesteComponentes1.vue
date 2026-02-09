@@ -1,19 +1,32 @@
 <template>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
+  <header class="pz-2" style="background: #0f2533">
+    <div
+      class="container d-flex align-items-center justify-content-between px-4"
+    >
+      <div
+        class="d-flex align-items-center gap-2 text-white fw-bold me-2"
+        style="width: 80px; height: 100px"
+      >
         <img src="../assets/logo404.png" alt="logo" />
       </div>
 
-      <nav class="menu">
-        <a>Home</a>
-        <a>Como Funciona</a>
-        <a>Planos e Preços</a>
-        <a>Perguntas Frequentes</a>
-        <a>Contato</a>
+      <nav class="d-flex gap-4 h5">
+        <a class="text-white text-decoration-none link-custom">Home</a>
+        <a class="text-white text-decoration-none link-custom">Como Funciona</a>
+        <a class="text-white text-decoration-none link-custom"
+          >Planos e Preços</a
+        >
+        <a class="text-white text-decoration-none link-custom"
+          >Perguntas Frequentes</a
+        >
+        <a class="text-white text-decoration-none link-custom">Contato</a>
       </nav>
 
-      <button class="btn-outline">Começar Agora</button>
+      <button
+        class="btn bg-white text-dark border-0 px-5 py-3 fw-semibold fs-5 rounded-3"
+      >
+        Começar Agora
+      </button>
     </div>
   </header>
 </template>
@@ -25,18 +38,22 @@ export default {
 </script>
 
 <style scoped>
+/*
 a:visited {
   color: #fff;
   border-bottom: 2px solid #1fd18a;
 }
+
 a:hover {
   color: #fff;
   border-bottom: 2px solid #1fd18a;
 }
+  
 .header {
   background: #0f2533;
   padding: 18px 0;
 }
+/*
 .container {
   max-width: 1200px;
   margin: auto;
@@ -45,6 +62,8 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
+ 
+
 .logo {
   width: 80px;
   height: 100;
@@ -55,16 +74,8 @@ a:hover {
   font-weight: 700;
   margin-right: 10px;
 }
-.logo-circle {
-  width: 54px;
-  height: 34px;
-  background: #1fd18a;
-  color: #0f2533;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  
+
 .menu {
   display: flex;
   gap: 22px;
@@ -74,6 +85,7 @@ a:hover {
   font-size: 20px;
   cursor: pointer;
 }
+/*
 
 .btn-outline {
   background: #fff;
@@ -84,4 +96,5 @@ a:hover {
   font-weight: 600;
   font-size: 20px;
 }
+  */
 </style>
