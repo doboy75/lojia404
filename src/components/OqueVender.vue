@@ -8,7 +8,7 @@
         <p
           style="
             color: #1b2733;
-            font-size: 20 px;
+            font-size: 20px;
             font-weight: 300;
             margin-top: 38px;
           "
@@ -19,7 +19,7 @@
           class="d-flex justify-content-center"
           style="
             padding: 15px 30px;
-            border-radius: 9px;
+            border-radius: 14.89px;
             background-color: #22b573;
             color: #ffffff;
 

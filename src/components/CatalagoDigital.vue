@@ -1,20 +1,41 @@
 <template>
-  <section :class="hero_seccao">
-    <div :class="container">
-      <div>
-        <img src="../assets/bro copy.png" alt="" />
+  <section class="d-flex justify-content-center">
+    <div class="row py-5 my-5 gap-5" style="width: 1101px">
+      <div class="col">
+        <img
+          src="../assets/bro copy.png"
+          alt=""
+          style="width: 482.88px; height: 468.11px"
+        />
       </div>
-      <div :class="caixa">
-        <h2 :class="texto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+      <div class="col">
+        <h2 style="font-size: 50px; font-weight: 700; color: #1b2733">
+          {{ textMidia }}
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          deserunt blanditiis maxime repellendus enim quia veritatis, maiores
-          ipsa quibusdam nostrum impedit cum ab tempore totam sequi, asperiores
-          libero vel! Cum?
+        <p
+          style="
+            color: #1b2733;
+            font-size: 20px;
+            font-weight: 300;
+            margin: 34px 0;
+          "
+        >
+          {{ conteudoMidia }}
         </p>
-        <button :class="bt">Comprar Agora</button>
+        <button
+          class="mb-5"
+          style="
+            border: none;
+            color: #ffffff;
+            background-color: #1b2733;
+            font-size: 31.14px;
+            font-weight: 700;
+            border-radius: 6.7px;
+            padding: 10px 20px;
+          "
+        >
+          {{ btTextMidia }}
+        </button>
       </div>
     </div>
   </section>
@@ -25,36 +46,12 @@ export default {
   name: "CatalagoDigital",
   data() {
     return {
-      hero_seccao: "seccao-2",
-      container: "container-2",
-      caixa: "caixatexto",
-      bt: "botao",
+      textMidia:
+        "Leve seus clientes das mídias sociais para seu Catálogo Digital",
+      conteudoMidia:
+        " Com a Lojia você terá um link onde poderá divulgar ele na Bio do seu Instagram e assim divulgar seus produtos na sua conta. Você vai vender muito mais!",
+      btTextMidia: "Começar Agora",
     };
   },
 };
 </script>
-<style>
-.seccao-2 {
-  display: flex;
-  justify-content: center;
-}
-
-.container-2 {
-  width: 68rem;
-  display: flex;
-  gap: 2rem;
-  text-align: start;
-}
-.caixatexto {
-  text-align: end;
-}
-.botao {
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
-  background-color: #42b983;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-</style>
