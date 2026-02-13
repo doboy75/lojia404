@@ -42,6 +42,7 @@
           font-size: 14.1px;
           border-radius: 9px;
           font-weight: 700;
+          cursor: pointer;
         "
       >
         Começar agora

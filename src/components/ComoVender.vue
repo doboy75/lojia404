@@ -111,7 +111,7 @@
       padding: 10px 20px;
     "
   >
-    Começar Agora
+    {{ btntext }}
   </button>
 </template>
 
@@ -133,6 +133,7 @@ export default {
       text_3: "Você recebe o pedido no whatsApp",
       imgmoca: "../assets/vetor passo 1.png",
       descricaoimg: "uma moça escolhendo itens",
+      btntext: "Começar Agora",
     };
   },
 };

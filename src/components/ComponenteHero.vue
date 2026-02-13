@@ -37,6 +37,7 @@
             font-size: 27.22px;
             font-weight: 700;
             margin-top: 32px;
+            cursor: pointer;
           "
         >
           Começar Agora
