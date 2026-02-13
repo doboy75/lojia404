@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  name: "CartoesComponentes",
+  name: "ExemplosDeLojas",
   data() {
     return {
       cartao: "cartao",

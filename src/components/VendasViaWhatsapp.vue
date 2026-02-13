@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "PhoneComponente",
+  name: "VendasViaWhatsapp",
   data() {
     return {
       seccao: "seccao",

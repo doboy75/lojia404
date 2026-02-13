@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "CardSecound",
+  name: "OqueVender",
 
   data() {
     return {

@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "HeroComponente",
+  name: "CatalagoDigital",
   data() {
     return {
       hero_seccao: "seccao-2",

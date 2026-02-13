@@ -1,0 +1,97 @@
+<template>
+  <section class="hero" style="padding: 8.5rem 0; background: #0f2533">
+    <div class="container row row align-items-center min-vh-100">
+      <div class="col-lg-5 text-start">
+        <h1 style="font-size: 50px; color: #ffffff; font-weight: 700">
+          Venda Online e<br />
+          receba os <br />pedidos pelo <br />Whatsapp
+        </h1>
+
+        <p
+          class="text-white lh-base"
+          style="
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 300;
+            margin-bottom: 30px;
+            margin-top: 30px;
+          "
+        >
+          Tenha um
+          <span style="display: block; font-weight: 500; font-size: 25px"
+            >Catálogo Digital</span
+          >
+          dos
+          <br />
+          seus produtos para você vender<br />
+          pela internet.
+        </p>
+
+        <button
+          class="d-flex justify-content-center"
+          style="
+            padding: 15px 30px;
+            border-radius: 9px;
+            background-color: #22b573;
+            color: #ffffff;
+            font-size: 27.22px;
+            font-weight: 700;
+            margin-top: 32px;
+          "
+        >
+          Começar Agora
+        </button>
+      </div>
+
+      <div class="col-lg-6 imagem-video">
+        <img src="../assets/video.png" alt="Imagem Hero" />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "ComponenteHero",
+  data() {
+    return {
+      corverde: "#22b573",
+    };
+  },
+};
+</script>
+
+<style scoped>
+.container {
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+/*
+.text h1 {
+  color: #fff;
+  font-size: 4.1rem;
+}*/
+.entrada {
+  font-size: 24px;
+  line-height: 40px;
+}
+/*
+.text p {
+  color: #cfd8dc;
+  margin: 2rem 0;
+}*/
+.btn-primary {
+  background: #1fd18a;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.imagem-video img {
+  width: 100%;
+  height: auto;
+}
+</style>

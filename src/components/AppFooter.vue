@@ -32,7 +32,7 @@
 </template>
 <script>
 export default {
-  name: "FooterComponentes",
+  name: "AppFooter",
   data() {
     return {
       footer_seccao: "seccao_footer",

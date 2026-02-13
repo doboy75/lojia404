@@ -7,11 +7,23 @@
         class="d-flex align-items-center gap-2 text-white fw-bold me-2"
         style="width: 80px; height: 100px"
       >
-        <img src="../assets/logo404.png" alt="logo" />
+        <img
+          src="../assets/logo404.png"
+          alt="logo"
+          style="width: 70.61px; height: 38.5px"
+        />
+        <img
+          src="../assets/404.png"
+          alt="logo"
+          style="width: 35px; height: 19px"
+        />
       </div>
 
-      <nav class="d-flex gap-5 h5">
-        <a class="text-white text-decoration-none link-custom">Home</a>
+      <nav class="d-flex gap-5" style="font-size: 14px">
+        <a class="text-decoration-none h6 link-custom" style="color: #22b573"
+          >Home</a
+        >
+
         <a class="text-white text-decoration-none link-custom">Como Funciona</a>
         <a class="text-white text-decoration-none link-custom"
           >Planos e Preços</a
@@ -23,9 +35,16 @@
       </nav>
 
       <button
-        class="btn bg-white text-dark border-0 px-5 py-2 fw-semibold fs-5 rounded-3"
+        class="py-2 px-3 btn d-flex justify-content-center"
+        style="
+          color: #22b573;
+          background-color: #ffffff;
+          font-size: 14.1px;
+          border-radius: 9px;
+          font-weight: 700;
+        "
       >
-        Começar Agora
+        Começar agora
       </button>
     </div>
   </header>
@@ -33,6 +52,9 @@
 
 <script>
 export default {
-  name: "TesteComponentes1",
+  name: "ComponenteNavegacao",
+  data() {
+    return {};
+  },
 };
 </script>
