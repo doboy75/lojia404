@@ -1,19 +1,38 @@
 <template>
-  <section class="seccao4">
-    <div :class="container">
-      <div :class="caixatexto">
-        <h2 :class="textogrande">
-          Venda Onlibe e receba os pedidos pelo Whaatsapp
+  <section
+    class="container-fluided d-flex justify-content-center pt-5"
+    style="background-color: #0f2533"
+  >
+    <div class="row d-flex align-items-center" style="width: 1154px">
+      <div class="col text-start">
+        <h2 style="color: #ffff; font-size: 50px; font-weight: 700">
+          {{ textWhatsapp }}
         </h2>
-        <p :class="textphone">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-          accusantium quidem voluptates dicta facere, tempore possimus assumenda
-          quas saepe. At sint nostrum dignissimos provident modi eveniet natus
-          cupiditate ad iure.
+        <p
+          style="color: #ffff; font-size: 20px; font-weight: 300; padding: 10px"
+        >
+          Tenha um <Span>Catalogo Digital</Span> dos seus produtos para voçé
+          <span>Vender pela internet.</span>Com isso seus clientes poderão
+          <span>fazer pedidos de forma simples e fácil</span> e vocé
+          <span>receber através do whatsapp</span>
         </p>
-        <button :class="bt">Comçar Agora</button>
+        <button
+          class="mb-5"
+          style="
+            border: none;
+            color: #ffffff;
+            background-color: #22b573;
+
+            font-size: 31.14px;
+            font-weight: 700;
+            border-radius: 6.7px;
+            padding: 10px 20px;
+          "
+        >
+          {{ btwhatsapp }}
+        </button>
       </div>
-      <div>
+      <div class="col">
         <img src="../assets/Phone.png" :alt="descricao" />
       </div>
     </div>
@@ -25,56 +44,9 @@ export default {
   name: "VendasViaWhatsapp",
   data() {
     return {
-      seccao: "seccao",
-      container: "container",
-      caixatexto: "caixatexto",
-      bt: "botao",
-      descricao: "Imagem de um celular",
-      textphone: "textophone",
-      textogrande: "textogrande",
+      textWhatsapp: "Venda Onlibe e receba os pedidos pelo Whaatsapp",
+      btwhatsapp: "Comçar Agora",
     };
   },
 };
 </script>
-
-<style>
-.container {
-  max-width: 74rem;
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-.caixatexto {
-  margin-bottom: 2rem;
-  text-align: start;
-  padding: 0 2rem;
-}
-.seccao4 {
-  display: flex;
-  justify-content: center;
-  background-color: #1b2733;
-  padding-top: 3.4rem;
-  padding: 2.4rem 3.4rem;
-}
-
-.textogrande {
-  font-size: 2.4rem;
-  color: white;
-  font-weight: 800;
-  margin: 0;
-}
-.textophone {
-  color: #e9e2e2;
-
-  line-height: 26px;
-}
-.botao {
-  padding: 1rem 2rem;
-  background-color: #1fd18a;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-</style>
