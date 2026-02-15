@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container-fluided d-flex justify-content-center pt-5"
+    class="container-fluided d-flex justify-content-center py-5"
     style="background-color: #0f2533"
   >
     <div class="row d-flex align-items-center" style="width: 1154px">
