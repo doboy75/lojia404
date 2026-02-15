@@ -1,7 +1,7 @@
 <template>
-  <header class="pz-2" :class="bg_dark">
+  <header :class="bg_dark">
     <div
-      class="container d-flex align-items-center justify-content-between px-4"
+      class="container d-flex align-items-center justify-content-between"
       style="width: 1440px"
     >
       <div
