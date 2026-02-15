@@ -16,11 +16,12 @@
           {{ conteudoCatalogo }}
         </p>
         <button
+          bg_green
           class="d-flex justify-content-center"
           style="
             padding: 15px 30px;
             border-radius: 14.89px;
-            background-color: #22b573;
+
             color: #ffffff;
 
             font-weight: 700;
@@ -56,7 +57,13 @@ export default {
       conteudoCatalogo:
         "O Catálogo Digital da lojia é ideal para vocé vender o que quiser,seja loja de roupas,semijoias,sapatos,peças automativas ou até no ramo alimentício como restaurante,lanchonetes,mercados e padarias.È a sua loja de forma simples,prática e  rápida!",
       textbtn: "Começar Agora",
+      bg_green: "background_green",
     };
   },
 };
 </script>
+<style>
+.background_green {
+  background-color: #22b573;
+}
+</style>

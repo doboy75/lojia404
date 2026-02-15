@@ -32,11 +32,12 @@
         </p>
 
         <button
+          :class="bg_gren"
           class="d-flex justify-content-center"
           style="
             padding: 15px 30px;
             border-radius: 9px;
-            background-color: #22b573;
+
             color: #ffffff;
             font-size: 27.22px;
             font-weight: 700;
@@ -66,7 +67,13 @@ export default {
     return {
       corverde: "#22b573",
       bg_dark: "background_dark",
+      bg_gren: "green_background",
     };
   },
 };
 </script>
+<style>
+.green_background {
+  background-color: #22b573;
+}
+</style>

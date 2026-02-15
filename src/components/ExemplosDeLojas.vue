@@ -108,11 +108,11 @@
   </section>
   <div class="container-fluided pt-2 d-flex justify-content-center">
     <button
+      :class="btnBg_dark"
       class="d-flex justify-content-center"
       style="
         border: none;
         color: #ffffff;
-        background-color: #1b2733;
 
         font-size: 31.14px;
         font-weight: 700;
@@ -131,7 +131,13 @@ export default {
     return {
       tituloExemplosLojas: "Veja alguns exemplos de lojas na Lojia",
       btTextoExemplosLojas: "Começar Agora",
+      btnBg_dark: "btnbackground_dark",
     };
   },
 };
 </script>
+<style>
+.btnbackground_dark {
+  background-color: #1b2733;
+}
+</style>

@@ -20,6 +20,7 @@
       </h1>
 
       <button
+        :class="bg_green"
         class="d-flex justify-content-center text-center w-100"
         style="
           color: #ffffff;
@@ -27,7 +28,7 @@
           font-weight: 700;
           border-radius: 20px;
           padding: 15px 60px;
-          background-color: #22b573;
+
           border: none;
           display: inline-block;
         "
@@ -41,5 +42,15 @@
 <script>
 export default {
   name: "ComponenteBeneficios",
+  data() {
+    return {
+      bg_green: "background_green",
+    };
+  },
 };
 </script>
+<style>
+.background_green {
+  background-color: #22b573;
+}
+</style>

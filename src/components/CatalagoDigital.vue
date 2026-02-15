@@ -23,11 +23,11 @@
           {{ conteudoMidia }}
         </p>
         <button
+          :class="bg_green"
           class="mb-5"
           style="
             border: none;
             color: #ffffff;
-            background-color: #22b573;
 
             font-size: 31.14px;
             font-weight: 700;
@@ -52,7 +52,13 @@ export default {
       conteudoMidia:
         " Com a Lojia você terá um link onde poderá divulgar ele na Bio do seu Instagram e assim divulgar seus produtos na sua conta. Você vai vender muito mais!",
       btTextMidia: "Começar Agora",
+      bg_green: "background_green",
     };
   },
 };
 </script>
+<style>
+.background_green {
+  background-color: #22b573;
+}
+</style>

@@ -17,11 +17,11 @@
           <span>receber através do whatsapp</span>
         </p>
         <button
+          :class="bg_green"
           class="mb-5"
           style="
             border: none;
             color: #ffffff;
-            background-color: #22b573;
 
             font-size: 31.14px;
             font-weight: 700;
@@ -46,7 +46,13 @@ export default {
     return {
       textWhatsapp: "Venda Onlibe e receba os pedidos pelo Whaatsapp",
       btwhatsapp: "Comçar Agora",
+      bg_green: "background_green",
     };
   },
 };
 </script>
+<style>
+.background_green {
+  background-color: #22b573;
+}
+</style>

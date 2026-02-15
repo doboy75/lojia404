@@ -100,11 +100,12 @@
     </div>
   </section>
   <button
+    :class="btnBg_dark"
     class="mb-5"
     style="
       border: none;
       color: #ffffff;
-      background-color: #1b2733;
+
       font-size: 31.14px;
       font-weight: 700;
       border-radius: 6.7px;
@@ -134,9 +135,14 @@ export default {
       imgmoca: "../assets/vetor passo 1.png",
       descricaoimg: "uma moça escolhendo itens",
       btntext: "Começar Agora",
+      btnBg_dark: "btnbackground_dark",
     };
   },
 };
 </script>
 
-<style></style>
+<style>
+.btnbackground_dark {
+  background-color: #1b2733;
+}
+</style>
