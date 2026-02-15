@@ -1,6 +1,10 @@
 <template>
-  <section class="hero" style="padding: 8.5rem 0; background: #0f2533">
-    <div class="container row row align-items-center min-vh-100">
+  <section
+    class="container-fluided d-flex justify-content-center"
+    :class="bg_dark"
+    style="padding: 8.5rem 0"
+  >
+    <div class="row row align-items-center min-vh-100" style="width: 1440px">
       <div class="col-lg-5 text-start">
         <h1 style="font-size: 50px; color: #ffffff; font-weight: 700">
           Venda Online e<br />
@@ -45,7 +49,11 @@
       </div>
 
       <div class="col-lg-6 imagem-video">
-        <img src="../assets/video.png" alt="Imagem Hero" />
+        <img
+          src="../assets/video.png"
+          alt="Imagem Hero "
+          style="width: 756px; height: 469px"
+        />
       </div>
     </div>
   </section>
@@ -57,42 +65,8 @@ export default {
   data() {
     return {
       corverde: "#22b573",
+      bg_dark: "background_dark",
     };
   },
 };
 </script>
-
-<style scoped>
-.container {
-  max-width: 120rem;
-  margin: auto;
-  padding: 0 2rem;
-}
-
-/*
-.text h1 {
-  color: #fff;
-  font-size: 4.1rem;
-}*/
-.entrada {
-  font-size: 24px;
-  line-height: 40px;
-}
-/*
-.text p {
-  color: #cfd8dc;
-  margin: 2rem 0;
-}*/
-.btn-primary {
-  background: #1fd18a;
-  border: none;
-  padding: 1rem 3rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  font-size: 1.7rem;
-}
-.imagem-video img {
-  width: 100%;
-  height: auto;
-}
-</style>

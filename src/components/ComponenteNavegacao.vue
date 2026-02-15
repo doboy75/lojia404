@@ -1,7 +1,8 @@
 <template>
-  <header class="pz-2" style="background: #0f2533">
+  <header class="pz-2" :class="bg_dark">
     <div
       class="container d-flex align-items-center justify-content-between px-4"
+      style="width: 1440px"
     >
       <div
         class="d-flex align-items-center gap-2 text-white fw-bold me-2"
@@ -55,7 +56,14 @@
 export default {
   name: "ComponenteNavegacao",
   data() {
-    return {};
+    return {
+      bg_dark: "background_dark ",
+    };
   },
 };
 </script>
+<style>
+.background_dark {
+  background-color: #0f2533;
+}
+</style>
