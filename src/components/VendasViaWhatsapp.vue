@@ -1,16 +1,14 @@
 <template>
   <section
-    class="container-fluided d-flex justify-content-center py-5"
-    style="background-color: #0f2533"
+    :class="bg_img"
+    class="container-fluided d-flex justify-content-center py-5 bg-dark"
   >
-    <div class="row d-flex align-items-center" style="width: 1154px">
+    <div class="container row d-flex align-items-center">
       <div class="col text-start">
-        <h2 style="color: #ffff; font-size: 50px; font-weight: 700">
+        <h2 class="display-4 text-white fw-bold">
           {{ textWhatsapp }}
         </h2>
-        <p
-          style="color: #ffff; font-size: 20px; font-weight: 300; padding: 10px"
-        >
+        <p class="lead text-white">
           Tenha um <Span>Catalogo Digital</Span> dos seus produtos para voçé
           <span>Vender pela internet.</span>Com isso seus clientes poderão
           <span>fazer pedidos de forma simples e fácil</span> e vocé
@@ -18,16 +16,7 @@
         </p>
         <button
           :class="bg_green"
-          class="mb-5"
-          style="
-            border: none;
-            color: #ffffff;
-
-            font-size: 31.14px;
-            font-weight: 700;
-            border-radius: 6.7px;
-            padding: 10px 20px;
-          "
+          class="my-5 h1 text-white border-0 rounded-3 py-3 px-4 fw-bold"
         >
           {{ btwhatsapp }}
         </button>
@@ -47,11 +36,17 @@ export default {
       textWhatsapp: "Venda Onlibe e receba os pedidos pelo Whaatsapp",
       btwhatsapp: "Comçar Agora",
       bg_green: "background_green",
+      bg_img: "bg_img",
     };
   },
 };
 </script>
-<style>
+<style scoped>
+.bg_img {
+  background-image: url("../assets/Group.png");
+  background-size: auto;
+  background-position: center;
+}
 .background_green {
   background-color: #22b573;
 }

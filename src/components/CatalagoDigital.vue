@@ -1,39 +1,21 @@
 <template>
-  <section class="d-flex justify-content-center">
-    <div class="row py-5 my-5 gap-5" style="width: 1101px">
+  <section class="container-fluid d-flex justify-content-center">
+    <div class="container row py-5 my-5 gap-5">
       <div class="col">
         <img
           src="../assets/bro copy.png"
-          alt=""
-          style="width: 482.88px; height: 468.11px"
+          alt="imagem de uma mulher segurando um celular"
         />
       </div>
       <div class="col">
-        <h2 style="font-size: 50px; font-weight: 700; color: #1b2733">
+        <h2 class="display-5 fw-bold mb-3">
           {{ textMidia }}
         </h2>
-        <p
-          style="
-            color: #1b2733;
-            font-size: 20px;
-            font-weight: 300;
-            margin: 34px 0;
-          "
-        >
+        <p class="lead mb-4">
           {{ conteudoMidia }}
         </p>
         <button
-          :class="bg_green"
-          class="mb-5"
-          style="
-            border: none;
-            color: #ffffff;
-
-            font-size: 31.14px;
-            font-weight: 700;
-            border-radius: 6.7px;
-            padding: 10px 20px;
-          "
+          class="h2 fw-bold mb-5 px-5 py-3 rounded-4 text-white bg-success border-0"
         >
           {{ btTextMidia }}
         </button>
@@ -45,6 +27,7 @@
 <script>
 export default {
   name: "CatalagoDigital",
+
   data() {
     return {
       textMidia:
@@ -52,13 +35,8 @@ export default {
       conteudoMidia:
         " Com a Lojia você terá um link onde poderá divulgar ele na Bio do seu Instagram e assim divulgar seus produtos na sua conta. Você vai vender muito mais!",
       btTextMidia: "Começar Agora",
-      bg_green: "background_green",
     };
   },
 };
 </script>
-<style>
-.background_green {
-  background-color: #22b573;
-}
-</style>
+<style scoped></style>

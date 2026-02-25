@@ -1,46 +1,21 @@
 <template>
-  <section class="d-flex justify-content-center container-fluided">
-    <div class="row p-5 text-start" style="width: 1154px">
+  <section class="d-flex justify-content-center container-fluid">
+    <div class="container row p-5 text-start">
       <div class="col">
-        <h2 style="font-size: 50px; font-weight: 700; color: #1b2733">
+        <h2 class="display-5 fw-bold">
           {{ textoCatalogo }}
         </h2>
-        <p
-          style="
-            color: #1b2733;
-            font-size: 20px;
-            font-weight: 300;
-            margin-top: 38px;
-          "
-        >
+        <p class="lead mb-4">
           {{ conteudoCatalogo }}
         </p>
         <button
-          bg_green
-          class="d-flex justify-content-center"
-          style="
-            padding: 15px 30px;
-            border-radius: 14.89px;
-
-            color: #ffffff;
-
-            font-weight: 700;
-            margin-top: 32px;
-            cursor: pointer;
-            border: none;
-            font-size: 31.14px;
-            margin-bottom: 40.61px;
-          "
+          class="h2 d-flex justify-content-center border-0 bg-success py-3 px-4 text-white rounded-3 fw-bold mb-2"
         >
           {{ textbtn }}
         </button>
       </div>
       <div class="col">
-        <img
-          src="../assets/bro.png"
-          :alt="descrição"
-          style="width: 493.85px; height: 434.22px"
-        />
+        <img src="../assets/bro.png" :alt="descrição" />
       </div>
     </div>
   </section>
@@ -57,13 +32,8 @@ export default {
       conteudoCatalogo:
         "O Catálogo Digital da lojia é ideal para vocé vender o que quiser,seja loja de roupas,semijoias,sapatos,peças automativas ou até no ramo alimentício como restaurante,lanchonetes,mercados e padarias.È a sua loja de forma simples,prática e  rápida!",
       textbtn: "Começar Agora",
-      bg_green: "background_green",
     };
   },
 };
 </script>
-<style>
-.background_green {
-  background-color: #22b573;
-}
-</style>
+<style scoped></style>

@@ -1,19 +1,9 @@
 <template>
-  <section class="d-flex justify-content-center">
-    <div style="width: 1106px">
-      <h1
-        class="h2 fw-bold my-5 text-center"
-        style="
-          color: #1b2733;
-          font-weight: 700;
-          font-size: 41.2px;
-          font-family: sans-serif;
-        "
-      >
+  <section class="container-fluid bg-light d-flex justify-content-center">
+    <div class="container">
+      <h1 class="h1 fw-bold text-center my-5">
         Aumente sua Receita
-        <span style="display: inline-block; font-size: 41.2px; font-weight: 600"
-          >com um</span
-        >
+        <span class="h1 fw-bold">com um</span>
         Catálogo Digital e <br />
         receba os pedidos no WhatsApp.<br />
         Simples, Fácil, Sem Taxas, Sem Burocracia!
@@ -21,17 +11,7 @@
 
       <button
         :class="bg_green"
-        class="d-flex justify-content-center text-center w-100"
-        style="
-          color: #ffffff;
-          font-size: 25px;
-          font-weight: 700;
-          border-radius: 20px;
-          padding: 15px 60px;
-
-          border: none;
-          display: inline-block;
-        "
+        class="container-fluid d-flex justify-content-center text-center py-4 text-white h3 fw-bold border-0 rounded-4"
       >
         Veja como funciona o Catálogo Digital da Loja 404
       </button>
@@ -49,7 +29,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .background_green {
   background-color: #22b573;
 }

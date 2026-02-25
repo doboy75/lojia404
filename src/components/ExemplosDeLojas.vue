@@ -1,104 +1,29 @@
 <template>
   <section class="container-fluided d-flex justify-content-center pt-5">
-    <div class="py-5" style="width: 1102.19px">
-      <div style="width: 1102.19px">
-        <h1
-          style="
-            color: #1b2733;
-            font-size: 52px;
-            font-weight: 700;
-            margin-bottom: 99px;
-          "
-        >
+    <div class="container py-5">
+      <div class="container">
+        <h1 class="display-5 fw-bold pb-4">
           {{ tituloExemplosLojas }}
         </h1>
       </div>
-      <div
-        class="row gap-5 d-flex justify-content-center"
-        style="width: 1102.19px"
-      >
-        <div
-          class="col"
-          style="
-            width: 232.19px;
-            border-radius: 30px;
-            height: 383.88px;
-            box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.2);
-          "
-        >
-          <h2
-            style="
-              font-size: 20px;
-              font-weight: 700;
-              color: #1b2733;
-              text-align: center;
-              padding-top: 28px;
-            "
-          >
+      <div class="container row gap-5 d-flex justify-content-center pt-2">
+        <div class="col shadow rounded-4" :class="heigh_card">
+          <h2 class="h5 fw-bold pt-3">
             Loja de <br />
             Eletrônicos
           </h2>
         </div>
-        <div
-          class="col"
-          style="
-            width: 232.19px;
-            border-radius: 30px;
-            height: 383.88px;
-            box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.2);
-          "
-        >
-          <h2
-            style="
-              font-size: 20px;
-              font-weight: 700;
-              color: #1b2733;
-              padding-top: 28px;
-            "
-          >
+        <div class="col shadow rounded-4" :class="heigh_card">
+          <h2 class="h5 fw-bold pt-3">
             Loja de <br />
             Roupas
           </h2>
         </div>
-        <div
-          class="col"
-          style="
-            width: 232.19px;
-            border-radius: 30px;
-            height: 383.88px;
-            box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.2);
-          "
-        >
-          <h2
-            style="
-              font-size: 20px;
-              font-weight: 700;
-              color: #1b2733;
-              text-align: center;
-              padding-top: 28px;
-            "
-          >
-            Hamburgueria
-          </h2>
+        <div class="col shadow rounded-4">
+          <h2 class="h5 fw-bold pt-3">Hamburgueria</h2>
         </div>
-        <div
-          class="col"
-          style="
-            width: 232.19px;
-            border-radius: 30px;
-            height: 383.88px;
-            box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.2);
-          "
-        >
-          <h2
-            style="
-              font-size: 20px;
-              font-weight: 700;
-              color: #1b2733;
-              text-align: center;
-              padding-top: 28px;
-            "
-          >
+        <div class="col shadow rounded-4">
+          <h2 class="h5 fw-bold pt-3">
             Loja de <br />
             Acessórios
           </h2>
@@ -106,19 +31,10 @@
       </div>
     </div>
   </section>
-  <div class="container-fluided pt-2 d-flex justify-content-center">
+  <div class="container-fluid pt-2 d-flex justify-content-center">
     <button
       :class="btnBg_dark"
-      class="d-flex justify-content-center"
-      style="
-        border: none;
-        color: #ffffff;
-
-        font-size: 31.14px;
-        font-weight: 700;
-        border-radius: 6.7px;
-        padding: 10px 20px;
-      "
+      class="d-flex justify-content-center h2 py-3 px-4 border-0 bg- text-white rounded-3 fw-bold"
     >
       {{ btTextoExemplosLojas }}
     </button>
@@ -131,13 +47,17 @@ export default {
     return {
       tituloExemplosLojas: "Veja alguns exemplos de lojas na Lojia",
       btTextoExemplosLojas: "Começar Agora",
-      btnBg_dark: "btnbackground_dark",
+      btnBg_dark: "btnBg_dark",
+      heigh_card: "heigh_card",
     };
   },
 };
 </script>
-<style>
-.btnbackground_dark {
-  background-color: #1b2733;
+<style scoped>
+.heigh_card {
+  height: 383.88px;
+}
+.btnBg_dark {
+  background-color: #0f2533;
 }
 </style>

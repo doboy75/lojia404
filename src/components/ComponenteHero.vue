@@ -1,60 +1,62 @@
 <template>
-  <section
-    class="container-fluided d-flex justify-content-center"
-    :class="bg_dark"
-    style="padding: 8.5rem 0"
-  >
-    <div class="row row align-items-center min-vh-100" style="width: 1440px">
-      <div class="col-lg-5 text-start">
-        <h1 style="font-size: 50px; color: #ffffff; font-weight: 700">
-          Venda Online e<br />
-          receba os <br />pedidos pelo <br />Whatsapp
-        </h1>
+  <section class="container-fluid bg-dark" :class="bg_img">
+    <header class="container py-4 px-5">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-2 text-white fw-bold me-2">
+          <img src="../assets/logo404.png" alt="logo" />
+          <img src="../assets/404.png" alt="logo" />
+        </div>
 
-        <p
-          class="text-white lh-base"
-          style="
-            font-size: 20px;
-            color: #ffffff;
-            font-weight: 300;
-            margin-bottom: 30px;
-            margin-top: 30px;
-          "
-        >
-          Tenha um
-          <span style="display: block; font-weight: 500; font-size: 25px"
-            >Catálogo Digital</span
+        <nav class="container d-flex align-items-center gap-5 h5">
+          <a class="text-success text-decoration-none link-custom">Home</a>
+
+          <a class="text-white text-decoration-none link-custom"
+            >Como Funciona</a
           >
-          dos
-          <br />
-          seus produtos para você vender<br />
-          pela internet.
-        </p>
+          <a class="text-white text-decoration-none link-custom"
+            >Planos e Preços</a
+          >
+          <a class="text-white text-decoration-none link-custom"
+            >Perguntas Frequentes</a
+          >
+          <a class="text-white text-decoration-none link-custom">Contato</a>
 
-        <button
-          :class="bg_gren"
-          class="d-flex justify-content-center"
-          style="
-            padding: 15px 30px;
-            border-radius: 9px;
-
-            color: #ffffff;
-            font-size: 27.22px;
-            font-weight: 700;
-            margin-top: 32px;
-            cursor: pointer;
-          "
-        >
-          Começar Agora
-        </button>
+          <button
+            class="text-success bg-white rounded-4 py-2 px-3 btn d-flex justify-content-center ms-5"
+            :class="btn_texto"
+          >
+            Começar agora
+          </button>
+        </nav>
       </div>
+    </header>
+    <div class="container d-flex justify-content-center">
+      <div class="container row row align-items-center min-vh-100">
+        <div class="col-lg-5 text-start">
+          <h1 class="display-3 text-white fw-bold">
+            Venda Online e<br />
+            receba os <br />pedidos pelo <br />Whatsapp
+          </h1>
 
-      <div class="col-lg-6 imagem-video">
-        <img
-          src="../assets/video.png"
-          alt="Imagem Hero "
-          style="width: 756px; height: 469px"
-        />
+          <p class="text-white lh-base h4 fw-semi-bold mt-4 mb-5">
+            Tenha um
+            <span class="fw-bold h3">Catálogo Digital</span>
+            dos
+            <br />
+            seus produtos para você vender<br />
+            pela internet.
+          </p>
+
+          <button
+            class="h3 d-flex justify-content-center btn btn-success text-white fw-bold py-4 px-5 rounded-4"
+          >
+            Começar Agora
+          </button>
+        </div>
+
+        <div class="col-lg-7 d-flex justify-content-center">
+          <img src="../assets/video.png" alt="Imagem Hero " class="w-100" />
+        </div>
       </div>
     </div>
   </section>
@@ -65,15 +67,15 @@ export default {
   name: "ComponenteHero",
   data() {
     return {
-      corverde: "#22b573",
-      bg_dark: "background_dark",
-      bg_gren: "green_background",
+      bg_img: "bg_img",
     };
   },
 };
 </script>
-<style>
-.green_background {
-  background-color: #22b573;
+<style scoped>
+.bg_img {
+  background-image: url("../assets/Group.png");
+  background-size: cover;
+  background-position: auto;
 }
 </style>

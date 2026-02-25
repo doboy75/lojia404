@@ -1,5 +1,4 @@
 <template>
-  <ComponenteNavegacao />
   <ComponenteHero />
   <ComponenteBeneficios />
   <ComoVender />
@@ -12,7 +11,7 @@
 
 <script>
 import ComoVender from "./components/ComoVender.vue";
-import ComponenteNavegacao from "./components/ComponenteNavegacao.vue";
+
 import ComponenteHero from "./components/ComponenteHero.vue";
 import ComponenteBeneficios from "./components/ComponenteBeneficios.vue";
 import OqueVender from "./components/OqueVender.vue";
@@ -25,7 +24,6 @@ import AppFooter from "./components/AppFooter.vue";
 export default {
   name: "App",
   components: {
-    ComponenteNavegacao,
     ComponenteHero,
     ComponenteBeneficios,
     ComoVender,
