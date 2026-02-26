@@ -1,5 +1,8 @@
 <template>
-  <section class="d-flex justify-content-center container-fluid">
+  <section
+    :id="perguntas"
+    class="d-flex justify-content-center container-fluid"
+  >
     <div class="container row p-5 text-start">
       <div class="col">
         <h2 class="display-5 fw-bold">
@@ -9,7 +12,8 @@
           {{ conteudoCatalogo }}
         </p>
         <button
-          class="h2 d-flex justify-content-center border-0 bg-success py-3 px-4 text-white rounded-3 fw-bold mb-2"
+          class="h2 d-flex justify-content-center border-0 py-3 px-4 text-white rounded-3 fw-bold mb-2"
+          :class="background_green"
         >
           {{ textbtn }}
         </button>
@@ -32,8 +36,14 @@ export default {
       conteudoCatalogo:
         "O Catálogo Digital da lojia é ideal para vocé vender o que quiser,seja loja de roupas,semijoias,sapatos,peças automativas ou até no ramo alimentício como restaurante,lanchonetes,mercados e padarias.È a sua loja de forma simples,prática e  rápida!",
       textbtn: "Começar Agora",
+      background_green: "background_green",
+      perguntas: "perguntas",
     };
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.background_green {
+  background-color: #22b573;
+}
+</style>

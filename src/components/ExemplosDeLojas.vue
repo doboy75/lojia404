@@ -1,5 +1,8 @@
 <template>
-  <section class="container-fluided d-flex justify-content-center pt-5">
+  <section
+    :id="precos"
+    class="container-fluided d-flex justify-content-center pt-5"
+  >
     <div class="container py-5">
       <div class="container">
         <h1 class="display-5 fw-bold pb-4">
@@ -49,6 +52,7 @@ export default {
       btTextoExemplosLojas: "Começar Agora",
       btnBg_dark: "btnBg_dark",
       heigh_card: "heigh_card",
+      precos: "precos",
     };
   },
 };

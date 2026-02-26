@@ -11,7 +11,7 @@
 
       <button
         :class="bg_green"
-        class="container-fluid d-flex justify-content-center text-center py-4 text-white h3 fw-bold border-0 rounded-4"
+        class="container-fluid d-flex justify-content-center shadow text-center py-4 text-white h3 fw-bold border-0 rounded-4"
       >
         Veja como funciona o Catálogo Digital da Loja 404
       </button>

@@ -1,7 +1,11 @@
 <template>
-  <section class="container-fluid d-flex justify-content-center">
+  <section
+    :id="comoFunciona"
+    class="container-fluid d-flex justify-content-center"
+  >
     <div class="container row py-5 my-5 gap-5">
       <div class="col shadow rounded-4 px-4">
+        <span class="text-start fw-bold" :class="posicaoIndex">1</span>
         <h2 class="h4 py-4 fw-bold">
           {{ textWhatsapp }}
         </h2>
@@ -10,7 +14,8 @@
           {{ textCard_1 }}
         </p>
       </div>
-      <div class="col shadow rounded-4 px-4">
+      <div class="col shadow rounded-4 px-4 mx-5">
+        <span class="text-start fw-bold" :class="posicaoIndex">2</span>
         <h2 class="h4 py-4 fw-bold">
           {{ text_2 }}
         </h2>
@@ -20,6 +25,7 @@
         </p>
       </div>
       <div class="col shadow rounded-4 px-4">
+        <span class="text-start fw-bold" :class="posicaoIndex">3</span>
         <h2 class="h4 py-4 fw-bold">
           {{ text_3 }}
         </h2>
@@ -58,6 +64,9 @@ export default {
       descricaoimg: "uma moça escolhendo itens",
       btntext: "Começar Agora",
       btnBg_dark: "btnbackground_dark",
+      posicaoIndex: "posicaoIndex",
+      posicaoIndex_card: "posicaoIndex _card",
+      comoFunciona: "comoFunciona",
     };
   },
 };
@@ -66,5 +75,17 @@ export default {
 <style scoped>
 .btnbackground_dark {
   background-color: #1b2733;
+}
+
+.posicaoIndex {
+  position: relative;
+  z-index: 0;
+  bottom: 37px;
+  right: 55px;
+  display: block;
+  font-size: 86px;
+}
+.posicaoIndex_card {
+  z-index: 2;
 }
 </style>

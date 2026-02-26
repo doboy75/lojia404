@@ -1,7 +1,8 @@
 <template>
   <section
-    :class="bg_img"
+    :id="contacto"
     class="container-fluided d-flex justify-content-center py-5 bg-dark"
+    :class="bg_img"
   >
     <div class="container row d-flex align-items-center">
       <div class="col text-start">
@@ -37,6 +38,7 @@ export default {
       btwhatsapp: "Comçar Agora",
       bg_green: "background_green",
       bg_img: "bg_img",
+      contacto: "contacto",
     };
   },
 };
@@ -44,8 +46,9 @@ export default {
 <style scoped>
 .bg_img {
   background-image: url("../assets/Group.png");
-  background-size: auto;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .background_green {
   background-color: #22b573;

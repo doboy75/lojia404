@@ -15,7 +15,8 @@
           {{ conteudoMidia }}
         </p>
         <button
-          class="h2 fw-bold mb-5 px-5 py-3 rounded-4 text-white bg-success border-0"
+          class="h2 fw-bold mb-5 px-5 py-3 rounded-4 text-white border-0"
+          :class="background_dark"
         >
           {{ btTextMidia }}
         </button>
@@ -35,8 +36,13 @@ export default {
       conteudoMidia:
         " Com a Lojia você terá um link onde poderá divulgar ele na Bio do seu Instagram e assim divulgar seus produtos na sua conta. Você vai vender muito mais!",
       btTextMidia: "Começar Agora",
+      background_dark: "background_dark",
     };
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.background_dark {
+  background-color: #1b2733;
+}
+</style>

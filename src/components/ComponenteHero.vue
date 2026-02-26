@@ -1,32 +1,47 @@
 <template>
-  <section class="container-fluid bg-dark" :class="bg_img">
-    <header class="container py-4 px-5">
+  <section
+    class="container-fluid"
+    :class="{ /* bg_img, */ bg_dark, bg_imgEstilo }"
+  >
+    <header class="container-fluid py-4 px-5">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center gap-2 text-white fw-bold me-2">
           <img src="../assets/logo404.png" alt="logo" />
           <img src="../assets/404.png" alt="logo" />
         </div>
 
-        <nav class="container d-flex align-items-center gap-5 h5">
-          <a class="text-success text-decoration-none link-custom">Home</a>
+        <nav
+          class="container-fluid justify-content-center d-flex align-items-center gap-5 h5"
+        >
+          <a href="#comer" class="text-success text-decoration-none link-custom"
+            >Home</a
+          >
 
-          <a class="text-white text-decoration-none link-custom"
+          <a
+            href="#comoFunciona"
+            class="text-white text-decoration-none link-custom"
             >Como Funciona</a
           >
-          <a class="text-white text-decoration-none link-custom"
+          <a href="#precos" class="text-white text-decoration-none link-custom"
             >Planos e Preços</a
           >
-          <a class="text-white text-decoration-none link-custom"
+          <a
+            href="#perguntas"
+            class="text-white text-decoration-none link-custom"
             >Perguntas Frequentes</a
           >
-          <a class="text-white text-decoration-none link-custom">Contato</a>
+          <a
+            href="#contacto"
+            class="text-white text-decoration-none link-custom"
+            >Contato</a
+          >
 
-          <button
-            class="text-success bg-white rounded-4 py-2 px-3 btn d-flex justify-content-center ms-5"
-            :class="btn_texto"
+          <div
+            class="bg-light rounded-4 fw-bold py-2 px-4 btn d-flex justify-content-center ms-5"
+            :class="{ btnColor_green }"
           >
             Começar agora
-          </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -48,14 +63,18 @@
           </p>
 
           <button
-            class="h3 d-flex justify-content-center btn btn-success text-white fw-bold py-4 px-5 rounded-4"
+            class="h3 py-3 px-5 rounded-4 fw-bold-flex justify-content-center text-light"
+            :class="{ btnColor_fundo_green }"
           >
             Começar Agora
           </button>
         </div>
 
         <div class="col-lg-7 d-flex justify-content-center">
-          <img src="../assets/video.png" alt="Imagem Hero " class="w-100" />
+          <div class="w-100">
+            <h2 class="text-light display-6 fw-bold">Veja como funciona:</h2>
+            <img src="../assets/video.png" alt="Imagem Hero " class="w-100" />
+          </div>
         </div>
       </div>
     </div>
@@ -67,15 +86,35 @@ export default {
   name: "ComponenteHero",
   data() {
     return {
-      bg_img: "bg_img",
+      /*       bg_img: "bg_img", */
+      bg_imgEstilo: "bg_imgEstilo",
+      bg_dark: "bg_dark",
+      btnColor_green: "btnColor_green",
+      btnColor_fundo_green: "btnColor_fundo_green",
     };
   },
 };
 </script>
 <style scoped>
-.bg_img {
+/* .bg_img {
+  background-image: url("../assets/BG (1).png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+.bg_dark {
+  background-color: #1b2733;
+}
+.bg_imgEstilo {
   background-image: url("../assets/Group.png");
-  background-size: cover;
-  background-position: auto;
+  background-position: center top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.btnColor_green {
+  color: #22b573;
+}
+.btnColor_fundo_green {
+  background-color: #22b573;
 }
 </style>
