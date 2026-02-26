@@ -13,7 +13,10 @@
         <nav
           class="container-fluid justify-content-center d-flex align-items-center gap-5 h5"
         >
-          <a href="#comer" class="text-success text-decoration-none link-custom"
+          <a
+            href="#comer"
+            class="text-decoration-none link-custom fw-bold"
+            :class="btnColor_green"
             >Home</a
           >
 

@@ -43,6 +43,6 @@ export default {
 </script>
 <style scoped>
 .background_dark {
-  background-color: #1b2733;
+  background-color: #22b573;
 }
 </style>
