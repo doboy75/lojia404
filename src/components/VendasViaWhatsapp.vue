@@ -1,8 +1,8 @@
 <template>
   <section
     :id="contacto"
-    class="container-fluided d-flex justify-content-center py-5 bg-dark"
-    :class="bg_img"
+    class="container-fluid d-flex justify-content-center py-5"
+    :class="{ bg_img, bg_dark }"
   >
     <div class="container row d-flex align-items-center">
       <div class="col text-start">
@@ -39,18 +39,22 @@ export default {
       bg_green: "background_green",
       bg_img: "bg_img",
       contacto: "contacto",
+      bg_dark: "bg_dark",
     };
   },
 };
 </script>
 <style scoped>
 .bg_img {
-  background-image: url("../assets/Group.png");
-  background-size: contain;
+  background-image: url("../assets/Pattern (1).png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .background_green {
   background-color: #22b573;
+}
+.bg_dark {
+  background-color: #1b2733;
 }
 </style>

@@ -106,10 +106,10 @@ export default {
   background-color: #1b2733;
 }
 .bg_imgEstilo {
-  background-image: url("../assets/Group.png");
-  background-position: center top left;
+  background-image: url("../assets/Pattern (1).png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .btnColor_green {
   color: #22b573;
